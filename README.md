@@ -1,6 +1,6 @@
 # NGE
 
-Naive Gauss Elimination on matlab and solve Ax=b simultaneous equation model
+Naive Gauss Elimination on matlab and solve **Ax=b** simultaneous equation model
 <br/><br/>
 
 ## Basic Idea
@@ -10,7 +10,7 @@ The Psedocode of this code is
  
 ## Discription
  * First
-   > Get Matrix A and b. 
+   > Get Matrix A and b. That's what I do.
    ```
         coe = readmatrix('A.xlsx');     
         con = readmatrix('b.xlsx');
@@ -24,21 +24,19 @@ The Psedocode of this code is
     ```
  
  * Second  
-   > Program will run and show _**Upper Triangular Matrix**_ and and anw 
+   > Program will run and show _**Upper Triangular Matrix**_ and and answer   
    
  * Third   
-  
-   Program will stop in 3 situations.
-   + First, when error is bigger than lastest one.
-   + Second, when the error value converge to the error value you set
-   + Third, when the number of iteration reaches to number you set
+   > Actually, there is better way to solve simultaneous equation
+   > You can use "backslash \\"      
+   ```
+        Xprof= (coe\con).' 
+    ```
+   > If you add this line to your script file, you can see that answer is same.
+
 
 ## Others..   
+ * I uploaded only function m-file. So, you should write your own script m-file. 
  * I made this code to do my college assignment.   
-   After making this, I compare mine with [the codes](https://kr.mathworks.com/matlabcentral/fileexchange/68885-the-newton-raphson-method) that uploaded at Mathworks homepage.   
-   And then, I thought,   
-   > _"oh shit, my code is more **user friendly** than uploaded codes."_  
-   > 
-   > **(Actually, it's not. Just my opinion)** 
-      
-  * I am hoping that my code can help other undergraduate students' assignments
+ * I use Excel to input values, because it is inconvenient to enter a matrix in a matlab.
+ * I am hoping that my code can help other undergraduate students' assignments.
