@@ -10,9 +10,11 @@ for k=1:n-1
 end
 A =C(:,1:n)
 b =C(:,n+1)
-x(n) = b(n)/A(n,n)
+x(n) = b(n)/A(n,n);
 for i = n-1:-1:1 % 출력용 코드
     
-    x(i) = (b(i)-sum(A(i,i+1:n).*(x(i+1:n))))/A(i,i)  %9.17식 종합
+    x(i) = (b(i)-sum(A(i,i+1:n).*(x(i+1:n))))/A(i,i);  %9.17식 종합
     
 end
+
+Ans = x
