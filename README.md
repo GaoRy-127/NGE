@@ -10,12 +10,13 @@ The Psedocode of this code is
  
 ## Discription
  * First
-   > Get Matrix A and b. That's what I do.
+   > Get Matrix A and b. 
    ```
         coe = readmatrix('A.xlsx');     
         con = readmatrix('b.xlsx');
     ```
-   > In this way you should make 'Excel file' and input values there.    
+   > In this way you should make 'Excel file' and input values there. That's what I do.
+   
         
    > Or You can get A and b directly
    ```
